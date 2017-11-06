@@ -1,0 +1,21 @@
+---
+title: JG Le Wagon - Middleman - Team
+---
+
+<div id="team">
+  <div class="team-content">
+    <h1>Today's Team</h1>
+    <ul class="list-inline text-center">
+      <% {"32279864":"jared", "29435293":"clara"}.each do |gh_id, name| %>
+      <li>
+        <%= image_tag "https://avatars0.githubusercontent.com/u/#{gh_id}", class: "img-circle"%>
+        <h3><%= name.capitalize %></h3>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<!-- clara 29435293 -->
+<!-- jared 32279864
+-->
